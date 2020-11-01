@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		704E9D6C2549D8F100CD005E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6B2549D8F100CD005E /* AppDelegate.swift */; };
 		704E9D6E2549D8F100CD005E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6D2549D8F100CD005E /* SceneDelegate.swift */; };
-		704E9D702549D8F100CD005E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6F2549D8F100CD005E /* ViewController.swift */; };
+		704E9D702549D8F100CD005E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6F2549D8F100CD005E /* MainViewController.swift */; };
 		704E9D732549D8F100CD005E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E9D712549D8F100CD005E /* Main.storyboard */; };
 		704E9D752549D8F400CD005E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704E9D742549D8F400CD005E /* Assets.xcassets */; };
 		704E9D782549D8F400CD005E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E9D762549D8F400CD005E /* LaunchScreen.storyboard */; };
+		704E9D812549D96300CD005E /* Graph Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D802549D96300CD005E /* Graph Model.swift */; };
+		7051B437254EBA090024DF40 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051B436254EBA090024DF40 /* StationButton.swift */; };
+		7051B43A254EBA890024DF40 /* MetroScheme.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7051B439254EBA890024DF40 /* MetroScheme.xib */; };
+		7051B43D254EBC5D0024DF40 /* MetroScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051B43C254EBC5D0024DF40 /* MetroScheme.swift */; };
+		70E68711254DF2FC00F2CFEE /* EdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E68710254DF2FC00F2CFEE /* EdgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		704E9D682549D8F100CD005E /* Metro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704E9D6B2549D8F100CD005E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704E9D6D2549D8F100CD005E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		704E9D6F2549D8F100CD005E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		704E9D6F2549D8F100CD005E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		704E9D722549D8F100CD005E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		704E9D742549D8F400CD005E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		704E9D772549D8F400CD005E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		704E9D792549D8F400CD005E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		704E9D802549D96300CD005E /* Graph Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graph Model.swift"; sourceTree = "<group>"; };
+		7051B436254EBA090024DF40 /* StationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
+		7051B439254EBA890024DF40 /* MetroScheme.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetroScheme.xib; sourceTree = "<group>"; };
+		7051B43C254EBC5D0024DF40 /* MetroScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroScheme.swift; sourceTree = "<group>"; };
+		70E68710254DF2FC00F2CFEE /* EdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				704E9D6B2549D8F100CD005E /* AppDelegate.swift */,
 				704E9D6D2549D8F100CD005E /* SceneDelegate.swift */,
-				704E9D6F2549D8F100CD005E /* ViewController.swift */,
+				704E9D6F2549D8F100CD005E /* MainViewController.swift */,
+				704E9D802549D96300CD005E /* Graph Model.swift */,
 				704E9D712549D8F100CD005E /* Main.storyboard */,
+				7051B439254EBA890024DF40 /* MetroScheme.xib */,
+				7051B43C254EBC5D0024DF40 /* MetroScheme.swift */,
+				70E68710254DF2FC00F2CFEE /* EdgeView.swift */,
+				7051B436254EBA090024DF40 /* StationButton.swift */,
 				704E9D742549D8F400CD005E /* Assets.xcassets */,
 				704E9D762549D8F400CD005E /* LaunchScreen.storyboard */,
 				704E9D792549D8F400CD005E /* Info.plist */,
@@ -124,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7051B43A254EBA890024DF40 /* MetroScheme.xib in Resources */,
 				704E9D782549D8F400CD005E /* LaunchScreen.storyboard in Resources */,
 				704E9D752549D8F400CD005E /* Assets.xcassets in Resources */,
 				704E9D732549D8F100CD005E /* Main.storyboard in Resources */,
@@ -137,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				704E9D702549D8F100CD005E /* ViewController.swift in Sources */,
+				7051B437254EBA090024DF40 /* StationButton.swift in Sources */,
+				704E9D702549D8F100CD005E /* MainViewController.swift in Sources */,
 				704E9D6C2549D8F100CD005E /* AppDelegate.swift in Sources */,
+				70E68711254DF2FC00F2CFEE /* EdgeView.swift in Sources */,
 				704E9D6E2549D8F100CD005E /* SceneDelegate.swift in Sources */,
+				7051B43D254EBC5D0024DF40 /* MetroScheme.swift in Sources */,
+				704E9D812549D96300CD005E /* Graph Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
