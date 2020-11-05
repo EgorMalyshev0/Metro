@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MetroScheme" customModule="Metro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1364" height="1196"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eNa-fC-cUM" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="55" width="117" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Девяткино">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="xMo-qV-EHK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="73" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="qj6-ye-Ry7" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="123" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="14p-ca-5D9" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="105" width="223" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Гражданский проспект">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="F4O-qI-xgy" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="173" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RJf-yM-A4Y" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="155" width="158" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Академическая">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="cj8-PX-ZjR" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="223" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PUL-AV-4tG" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="205" width="175" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Политехническая">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="6jJ-Kp-Yem" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="273" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L2N-PH-LCD" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="255" width="193" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Площадь Мужества">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="m6e-fh-SK8" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="323" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVa-FC-6r1" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="305" width="88" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Лесная">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="MHc-jS-gWo" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="373" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SFd-Uh-NHU" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="355" width="127" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Выборгская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="t9E-du-5rN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="423" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NXg-wq-ANh" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="405" width="171" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Площадь Ленина">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="AFy-3C-65S" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="782" y="473" width="5" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBq-f0-PoL" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="455" width="153" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Чернышевская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="qjQ-pe-M6O" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="535.5" width="127" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="  Маяковская">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemGreenColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="gTc-zF-tWl" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="745" y="535" width="5" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="x7p-Kc-eTO" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="703" y="606" width="150" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="  Владимирская">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemRedColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="qO0-eK-DF8" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="664" y="606" width="5" height="112"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="9b7-ER-63a" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="614" y="696" width="131" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="  Пушкинская">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemRedColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="A1m-Mk-izK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="581" y="696" width="5" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="b7O-w4-o5F" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="261" y="775" width="283" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Технологический институт - 1   ">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemRedColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="bjC-xQ-1Fv" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="512" y="788" width="5" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TTA-Qk-xQ8" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="378" y="823" width="124" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Балтийская  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="Bqw-Bm-Ybd" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="465" y="830" width="5" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ghg-am-bwW" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="344" y="875" width="107" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Нарвская  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="GIX-lg-Xrh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="413" y="881" width="5" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hRA-zx-Sn0" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="226" y="927" width="172" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Кировский завод  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="dfn-fc-3Rw" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="384" y="944" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="KHb-Xl-s1h" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="384" y="994" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="t3X-8s-zwa" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="384" y="1044" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="18" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="85e-5x-IQh" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="192" y="1026" width="203" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Ленинский проспект  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="19" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pcB-wu-wQt" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="193" y="1075" width="202" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Проспект Ветеранов  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="17" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W6A-RF-Xg2" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="310" y="975" width="85" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="Автово  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="jMI-Xz-1em" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="123" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="on7-Jw-sdY" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="105" width="89" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Парнас">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="J48-s7-RcN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="173" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VXd-5l-4uU" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="155" width="230" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Проспект Просвещения">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="zlI-if-428" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="223" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wKP-u3-dtg" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="205" width="89" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Озерки">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="5rj-vt-vE9" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="273" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uL8-6R-uJ3" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="255" width="105" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Удельная">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="maT-cI-G4w" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="323" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uyt-X3-4EN" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="305" width="129" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Пионерская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="Bp8-FM-t9y" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="373" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mtJ-YL-INE" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="354" width="142" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Черная Речка">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="CC1-rQ-gXZ" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="423" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TcS-Gd-9Bj" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="405" width="155" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Петроградская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="rGm-rY-s3D" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="472" width="5" height="53"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="28S-Rc-QOJ" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="455" width="131" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Горьковская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" id="BW2-Ca-ahP" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="516.5" width="182" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Невский проспект">
+                        <color key="titleColor" systemColor="systemBlueColor"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="nzR-fb-FLE" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="550" width="5" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="29" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="VaR-pG-Xb0" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="386" y="605" width="167" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Сенная площадь  ">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemBlueColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="od8-fR-dCK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="627" width="5" height="148"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" id="oQj-3D-slp" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="272" y="767" width="281" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="Технологический институт - 2  ">
+                        <color key="titleColor" systemColor="systemBlueColor"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="iss-5y-HES" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="787" width="5" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="5jN-Gd-sfo" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="838" width="5" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bzz-Db-SgP" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="820" width="138" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Фрунзенская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="509-EG-x9C" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="888" width="5" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ixW-hJ-Wzd" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="870" width="193" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Московские ворота">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="Xr2-dm-94d" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="938" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wlm-us-R9d" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="920" width="137" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Электросила">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="z66-52-SfL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="986" width="5" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vjl-CR-HbC" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="969" width="140" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Парк Победы">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="eIh-yp-JVx" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="1037" width="5" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YdL-eY-Cd1" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="1020" width="128" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Московская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xhR-n1-QyX" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="1070" width="105" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Звездная">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="cPn-JC-lC0" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="542" y="1087" width="5" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <button opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8kw-8N-mre" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="537" y="1119" width="98" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="  Купчино">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="o3G-29-o1O" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="242" y="329" width="5" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="38" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mMo-Mm-Gba" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="159" y="312" width="94" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="Беговая  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="39" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YKc-Mj-eBn" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="79" y="381" width="174" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="Новокрестовская  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="40" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="TXA-9c-WZV" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="121" y="456" width="132" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="Приморская  ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="gC1-o6-pzb" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="242" y="398" width="5" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="41" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="AIp-Ob-vmN" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="164" y="535" width="184" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Василеостровская  ">
+                                <attributes>
+                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Ayr-Jm-IO0" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="536" y="536" width="152" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="  Гостиный двор">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemGreenColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-HO-428" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="345" y="541" width="193" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" id="9P2-0X-7uS" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="516" width="197" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <state key="normal" title="  Площадь Восстания">
+                        <color key="titleColor" systemColor="systemRedColor"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-7N-OpI" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="550" y="541" width="228" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-04-CgN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="790" y="541" width="229" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" id="xNb-tc-TBE" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1014" y="543" width="5" height="54.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" id="uZX-wF-Sk7" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="589" width="309" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="  Площадь Александра Невского-1">
+                        <color key="titleColor" systemColor="systemGreenColor"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="0lX-qW-6ZD" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1014" y="622.5" width="5" height="149"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="Ln6-Fk-r9b" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1014" y="785" width="5" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="snu-fl-vd8" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="767" width="144" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="  Елизаровская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="exn-7o-0dP" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1014" y="835" width="5" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="46" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="njZ-N2-gQU" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="817" width="160" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="  Ломоносовская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="79u-0i-XHL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1014" y="885" width="5" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="47" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y6R-pM-qEX" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="867" width="146" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="  Пролетарская">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="iEd-qC-DQp" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1014" y="933" width="5" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                </view>
+                <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LSp-2W-F5w" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="916" width="98" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="  Обухово">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="49" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ef0-m9-UGt" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="967" width="110" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <state key="normal" title="  Рыбацкое">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="vNo-q8-CUT" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1008" y="608" width="311" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="  Площадь Александра Невского-2">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemOrangeColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="Ar5-2P-H61" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="242" y="470" width="5" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-Sv-Ngg" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="242" y="541" width="92" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="111.59420289855073" y="210.26785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

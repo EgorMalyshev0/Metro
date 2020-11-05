@@ -75,22 +75,6 @@ class Graph {
     
 }
 
-class GraphCreator {
-    func create() -> Graph {
-        var stations: [Station] = []
-        let one = Station(name: "1", tag: 1)
-        let two = Station(name: "2", tag: 2)
-        let three = Station(name: "3", tag: 3)
-        one.addEdge(destination: two, time: 10)
-        two.addEdge(destination: three, time: 6)
-        stations.append(one)
-        stations.append(two)
-        stations.append(three)
-        return Graph(stations: stations)
-    }
-    
-}
-
 class Path: CustomStringConvertible {
   public let cumulativeTime: Double
   public let station: Station
@@ -113,6 +97,13 @@ class Path: CustomStringConvertible {
             } else {
                 description += "\(element.name) -> "
             }
+        }
+        if cumulativeTime < 60 {
+            let time = "Время в пути: \(cumulativeTime) мин"
+            description += time
+        } else{
+            let time = "Время в пути: 1 ч \(cumulativeTime - 60) мин"
+            description += time
         }
         return description
     }

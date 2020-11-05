@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		704E9D6C2549D8F100CD005E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6B2549D8F100CD005E /* AppDelegate.swift */; };
 		704E9D6E2549D8F100CD005E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6D2549D8F100CD005E /* SceneDelegate.swift */; };
-		704E9D702549D8F100CD005E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704E9D6F2549D8F100CD005E /* MainViewController.swift */; };
 		704E9D732549D8F100CD005E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E9D712549D8F100CD005E /* Main.storyboard */; };
 		704E9D752549D8F400CD005E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704E9D742549D8F400CD005E /* Assets.xcassets */; };
 		704E9D782549D8F400CD005E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704E9D762549D8F400CD005E /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		7051B437254EBA090024DF40 /* StationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051B436254EBA090024DF40 /* StationButton.swift */; };
 		7051B43A254EBA890024DF40 /* MetroScheme.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7051B439254EBA890024DF40 /* MetroScheme.xib */; };
 		7051B43D254EBC5D0024DF40 /* MetroScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051B43C254EBC5D0024DF40 /* MetroScheme.swift */; };
+		70CC2F132552B0E2003262B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CC2F122552B0E2003262B2 /* MainViewController.swift */; };
+		70CC2F222552D8CC003262B2 /* GraphCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CC2F212552D8CC003262B2 /* GraphCreator.swift */; };
 		70E68711254DF2FC00F2CFEE /* EdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E68710254DF2FC00F2CFEE /* EdgeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +25,6 @@
 		704E9D682549D8F100CD005E /* Metro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704E9D6B2549D8F100CD005E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		704E9D6D2549D8F100CD005E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		704E9D6F2549D8F100CD005E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		704E9D722549D8F100CD005E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		704E9D742549D8F400CD005E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		704E9D772549D8F400CD005E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +33,8 @@
 		7051B436254EBA090024DF40 /* StationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationButton.swift; sourceTree = "<group>"; };
 		7051B439254EBA890024DF40 /* MetroScheme.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetroScheme.xib; sourceTree = "<group>"; };
 		7051B43C254EBC5D0024DF40 /* MetroScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroScheme.swift; sourceTree = "<group>"; };
+		70CC2F122552B0E2003262B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		70CC2F212552D8CC003262B2 /* GraphCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCreator.swift; sourceTree = "<group>"; };
 		70E68710254DF2FC00F2CFEE /* EdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,18 +70,43 @@
 			children = (
 				704E9D6B2549D8F100CD005E /* AppDelegate.swift */,
 				704E9D6D2549D8F100CD005E /* SceneDelegate.swift */,
-				704E9D6F2549D8F100CD005E /* MainViewController.swift */,
-				704E9D802549D96300CD005E /* Graph Model.swift */,
-				704E9D712549D8F100CD005E /* Main.storyboard */,
-				7051B439254EBA890024DF40 /* MetroScheme.xib */,
-				7051B43C254EBC5D0024DF40 /* MetroScheme.swift */,
-				70E68710254DF2FC00F2CFEE /* EdgeView.swift */,
-				7051B436254EBA090024DF40 /* StationButton.swift */,
+				70741CF7254F431E0008AF7B /* Model */,
+				70741CF4254F42E00008AF7B /* View */,
+				70741CF9254F43250008AF7B /* Controller */,
 				704E9D742549D8F400CD005E /* Assets.xcassets */,
 				704E9D762549D8F400CD005E /* LaunchScreen.storyboard */,
 				704E9D792549D8F400CD005E /* Info.plist */,
 			);
 			path = Metro;
+			sourceTree = "<group>";
+		};
+		70741CF4254F42E00008AF7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				704E9D712549D8F100CD005E /* Main.storyboard */,
+				7051B439254EBA890024DF40 /* MetroScheme.xib */,
+				7051B43C254EBC5D0024DF40 /* MetroScheme.swift */,
+				70E68710254DF2FC00F2CFEE /* EdgeView.swift */,
+				7051B436254EBA090024DF40 /* StationButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70741CF7254F431E0008AF7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				704E9D802549D96300CD005E /* Graph Model.swift */,
+				70CC2F212552D8CC003262B2 /* GraphCreator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70741CF9254F43250008AF7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				70CC2F122552B0E2003262B2 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,13 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CC2F132552B0E2003262B2 /* MainViewController.swift in Sources */,
 				7051B437254EBA090024DF40 /* StationButton.swift in Sources */,
-				704E9D702549D8F100CD005E /* MainViewController.swift in Sources */,
 				704E9D6C2549D8F100CD005E /* AppDelegate.swift in Sources */,
 				70E68711254DF2FC00F2CFEE /* EdgeView.swift in Sources */,
 				704E9D6E2549D8F100CD005E /* SceneDelegate.swift in Sources */,
 				7051B43D254EBC5D0024DF40 /* MetroScheme.swift in Sources */,
 				704E9D812549D96300CD005E /* Graph Model.swift in Sources */,
+				70CC2F222552D8CC003262B2 /* GraphCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39DWTW29SS;
 				INFOPLIST_FILE = Metro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,6 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39DWTW29SS;
 				INFOPLIST_FILE = Metro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
