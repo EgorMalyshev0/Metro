@@ -99,10 +99,10 @@ class Path: CustomStringConvertible {
             }
         }
         if cumulativeTime < 60 {
-            let time = "Время в пути: \(cumulativeTime) мин"
+            let time = "\nВремя в пути: \(cumulativeTime) мин"
             description += time
         } else{
-            let time = "Время в пути: 1 ч \(cumulativeTime - 60) мин"
+            let time = "\nВремя в пути: 1 ч \(cumulativeTime - 60) мин"
             description += time
         }
         return description

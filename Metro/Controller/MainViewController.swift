@@ -12,18 +12,31 @@ class MainViewController: UIViewController {
     let graph = GraphCreator().create()
     var scroll = UIScrollView()
     var scheme = UIView()
+    var imgViews = [UIImageView]()
         
     var temporaryTag: Int = 0
     var fromStation: Int = 0 {
         didSet {
-            if fromStation != 0 && toStation != 0{
+            if fromStation != 0 {
+                imgViews.forEach {$0.removeFromSuperview()}
+                imgViews.removeAll()
+                showPicture(.a)
+                showPicture(.b)
+            }
+            if toStation != 0 {
                 getPath()
             }
         }
     }
     var toStation: Int = 0{
         didSet {
-            if fromStation != 0 && toStation != 0{
+            if toStation != 0 {
+                imgViews.forEach {$0.removeFromSuperview()}
+                imgViews.removeAll()
+                showPicture(.a)
+                showPicture(.b)
+            }
+            if fromStation != 0 {
                 getPath()
             }
         }
@@ -46,13 +59,11 @@ class MainViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
         centerScheme()
     }
     
     func configurateScheme() {
         scroll.contentSize = scheme.bounds.size
-        
         scroll.delegate = self
         scroll.showsVerticalScrollIndicator = false
         scroll.showsHorizontalScrollIndicator = false
@@ -117,19 +128,49 @@ class MainViewController: UIViewController {
         alert.addAction(to)
         present(alert, animated: true, completion: nil)
     }
+    
+    func showPicture(_ pictureName: PictureName){
+        var check = 0
+        if pictureName == .a{
+            check = fromStation
+        } else {
+            check = toStation
+        }
+        guard check != 0 else {return}
+            guard let button = scheme.subviews.filter({$0.tag == check}).first as? StationButton else {return}
+            let fr = button.frame
+            let center = button.imageView!.center
+            let size = CGSize(width: 75, height: 90)
+            if button.semanticContentAttribute == .forceRightToLeft {
+                let origin = CGPoint(x: fr.origin.x + center.x - size.width / 2, y: fr.origin.y - size.height + center.y)
+                let img = UIImageView(frame: CGRect(origin: origin, size: size))
+                img.image = UIImage(named: pictureName.rawValue)
+                scheme.addSubview(img)
+                imgViews.append(img)
+            } else {
+                let origin = CGPoint(x: fr.origin.x + center.x - size.width / 2, y: fr.origin.y - size.height + center.y)
+                let img = UIImageView(frame: CGRect(origin: origin, size: size))
+                img.image = UIImage(named: pictureName.rawValue)
+                scheme.addSubview(img)
+                imgViews.append(img)
+            }
+    }
 
     func getPath(){
         if let from = graph.stationWithTag(fromStation), let to = graph.stationWithTag(toStation), let path = graph.shortestPath(source: from, destination: to){
             print(path.description)
-            fromStation = 0
-            toStation = 0
+            temporaryTag = 0
         }
     }
 }
 
+enum PictureName: String {
+    case a = "A"
+    case b = "B"
+}
+
 extension MainViewController: UIScrollViewDelegate{
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-//        let scheme = scrollView.subviews.first
         return self.scheme
     }
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
