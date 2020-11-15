@@ -17,11 +17,16 @@ class MainViewController: UIViewController {
     var temporaryTag: Int = 0
     var fromStation: Int = 0 {
         didSet {
-            if fromStation != 0 {
-                imgViews.forEach {$0.removeFromSuperview()}
-                imgViews.removeAll()
-                showPicture(.a)
-                showPicture(.b)
+            guard fromStation != 0 else {
+                picturesReboot()
+                cleanPath()
+                return
+            }
+            if fromStation != toStation {
+                picturesReboot()
+            } else {
+                toStation = 0
+                picturesReboot()
             }
             if toStation != 0 {
                 getPath()
@@ -30,11 +35,16 @@ class MainViewController: UIViewController {
     }
     var toStation: Int = 0{
         didSet {
-            if toStation != 0 {
-                imgViews.forEach {$0.removeFromSuperview()}
-                imgViews.removeAll()
-                showPicture(.a)
-                showPicture(.b)
+            guard toStation != 0 else {
+                picturesReboot()
+                cleanPath()
+                return
+            }
+            if toStation != fromStation {
+                picturesReboot()
+            } else {
+                fromStation = 0
+                picturesReboot()
             }
             if fromStation != 0 {
                 getPath()
@@ -124,8 +134,10 @@ class MainViewController: UIViewController {
                 self.temporaryTag = 0
             }
         }
+        let cancel = UIAlertAction(title: "Отмена", style: .destructive, handler: nil)
         alert.addAction(from)
         alert.addAction(to)
+        alert.addAction(cancel)
         present(alert, animated: true, completion: nil)
     }
     
@@ -155,12 +167,66 @@ class MainViewController: UIViewController {
                 imgViews.append(img)
             }
     }
+    
+    func picturesReboot(){
+        imgViews.forEach {$0.removeFromSuperview()}
+        imgViews.removeAll()
+        showPicture(.a)
+        showPicture(.b)
+    }
 
     func getPath(){
         if let from = graph.stationWithTag(fromStation), let to = graph.stationWithTag(toStation), let path = graph.shortestPath(source: from, destination: to){
+            cleanPath()
             print(path.description)
+            showPathOnScheme(path: path)
             temporaryTag = 0
+            for s in graph.stations{
+                s.visited = false
+            }
         }
+    }
+    
+    func showPathOnScheme(path: Path){
+        let stations = path.array
+        var edges: [Edge] = []
+        for i in 0...stations.count - 2 {
+            edges.append(stations[i].edgeWith(destination: stations[i+1])!)
+        }
+        let stationsOnScheme = scheme.subviews.filter{$0 is StationButton}
+        let edgesOnScheme = scheme.subviews.filter{$0 is EdgeView}
+        for ss in stationsOnScheme {
+            ss.alpha = 0.3
+            for s in stations {
+                if s.tag == ss.tag{
+                    ss.alpha = 1
+                }
+            }
+        }
+        for ee in edgesOnScheme {
+            ee.alpha = 0.3
+            for e in edges {
+                if e.tag == ee.tag{
+                    ee.alpha = 1
+                }
+            }
+        }
+        let scheme = self.scheme as! MetroScheme
+        scheme.checkHiddenEdges(edges: edges)
+        
+    }
+    
+    func cleanPath(){
+        let stationsOnScheme = scheme.subviews.filter{$0 is StationButton}
+        let edgesOnScheme = scheme.subviews.filter{$0 is EdgeView}
+        for ss in stationsOnScheme {
+            ss.alpha = 1
+        }
+        for ee in edgesOnScheme {
+            ee.alpha = 1
+        }
+        let scheme = self.scheme as! MetroScheme
+        scheme.rebootHiddenEdges()
     }
 }
 

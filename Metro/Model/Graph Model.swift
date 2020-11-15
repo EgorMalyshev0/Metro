@@ -12,25 +12,44 @@ class Station {
     var visited = false
     var tag: Int
     var edges: [Edge] = []
+    var lineNumber: Int
     
-    init(name: String, tag: Int) {
+    init(name: String, tag: Int, line: Int) {
         self.name = name
         self.tag = tag
+        self.lineNumber = line
     }
     
-    func addEdge(destination: Station, time: TimeInterval) {
-        self.edges.append(Edge(destination: destination, time: time))
-        destination.edges.append(Edge(destination: self, time: time))
+    func addEdge(destination: Station, time: TimeInterval, tag: Int) {
+        self.edges.append(Edge(destination: destination, time: time, tag: tag))
+        destination.edges.append(Edge(destination: self, time: time, tag: tag))
+    }
+    
+    func addTransition(destination: Station, time: TimeInterval) {
+        self.edges.append(Edge(destination: destination, time: time, tag: 0, isTransition: true))
+        destination.edges.append(Edge(destination: self, time: time, tag: 0, isTransition: true))
+    }
+    
+    func edgeWith(destination: Station) -> Edge?{
+        var foundedEdge: Edge? = nil
+        for e in edges{
+            if e.destination.name == destination.name { foundedEdge = e }
+        }
+        return foundedEdge
     }
 }
 
 class Edge {
     var destination: Station
     var time: TimeInterval
+    var tag: Int
+    var isTransition: Bool = false
     
-    init(destination: Station, time: TimeInterval) {
+    init(destination: Station, time: TimeInterval, tag: Int, isTransition: Bool = false) {
         self.destination = destination
         self.time = time
+        self.isTransition = isTransition
+        self.tag = tag
     }
 }
 
@@ -86,18 +105,35 @@ class Path: CustomStringConvertible {
         array.append(path.station)
         iterativePath = path
         }
-      return array
+        return array.reversed()
     }
     var description: String {
         var description = ""
-        let array = self.array.reversed()
-        for (index, element) in array.enumerated() {
-            if index == array.count - 1{
-                description += "\(element.name)"
+//        var tempor: Station?
+        for i in 0...array.count - 1 {
+            if i == array.count - 1{
+                description += "\(array[i].name)"
             } else {
-                description += "\(element.name) -> "
+                if array[i].edgeWith(destination: array[i+1])!.isTransition{
+                    description += "\(array[i].name) -> [Переход на линию \(array[i+1].lineNumber)] -> "
+                } else {
+                    description += "\(array[i].name) -> "
+                }
             }
         }
+//        for (index, element) in array.enumerated() {
+//            if index == array.count - 1{
+//                description += "\(element.name)"
+//            } else if index == 0{
+//                tempor = element
+//            } else {
+//                if element.edgeWith(destination: tempor!)!.isTransition{
+//
+//                } else {
+//                    description += "\(tempor!.name) -> "
+//                }
+//            }
+//        }
         if cumulativeTime < 60 {
             let time = "\nВремя в пути: \(cumulativeTime) мин"
             description += time

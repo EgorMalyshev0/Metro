@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class EdgeView: UIView {
 
     var isSetuped = false
@@ -21,6 +21,12 @@ class EdgeView: UIView {
     @IBInspectable var topRightCornerRadius: CGFloat = 0 {
         didSet {
             setTopRightCornerRadius(radius: topRightCornerRadius)
+        }
+    }
+    
+    @IBInspectable var bottomRightCornerRadius: CGFloat = 0 {
+        didSet {
+            setBottomRightCornerRadius(radius: topRightCornerRadius)
         }
     }
     
@@ -46,6 +52,11 @@ class EdgeView: UIView {
     func setTopRightCornerRadius(radius: CGFloat) {
         self.layer.cornerRadius = radius
         self.layer.maskedCorners = [.layerMaxXMinYCorner]
+    }
+    
+    func setBottomRightCornerRadius(radius: CGFloat) {
+        self.layer.cornerRadius = radius
+        self.layer.maskedCorners = [.layerMaxXMaxYCorner]
     }
     
     func setBottomLeftCornerRadius(radius: CGFloat) {

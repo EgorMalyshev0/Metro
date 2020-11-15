@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,38 +15,38 @@
             <rect key="frame" x="0.0" y="0.0" width="1602" height="1483"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" id="xMo-qV-EHK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="205" width="5" height="38"/>
+                <view tag="101" contentMode="scaleToFill" id="xMo-qV-EHK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="205" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="qj6-ye-Ry7" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="255" width="5" height="38"/>
+                <view tag="102" contentMode="scaleToFill" id="qj6-ye-Ry7" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="255" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="F4O-qI-xgy" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="305" width="5" height="38"/>
+                <view tag="103" contentMode="scaleToFill" id="F4O-qI-xgy" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="305" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="cj8-PX-ZjR" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="355" width="5" height="38"/>
+                <view tag="104" contentMode="scaleToFill" id="cj8-PX-ZjR" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="355" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="6jJ-Kp-Yem" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="405" width="5" height="38"/>
+                <view tag="105" contentMode="scaleToFill" id="6jJ-Kp-Yem" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="405" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="m6e-fh-SK8" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="455" width="5" height="38"/>
+                <view tag="106" contentMode="scaleToFill" id="m6e-fh-SK8" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="455" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVa-FC-6r1" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="438" width="82" height="22"/>
+                    <rect key="frame" x="805" y="438" width="82" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -55,13 +55,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="MHc-jS-gWo" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="505" width="5" height="38"/>
+                <view tag="107" contentMode="scaleToFill" id="MHc-jS-gWo" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="505" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SFd-Uh-NHU" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="488" width="122" height="22"/>
+                    <rect key="frame" x="805" y="488" width="122" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -70,13 +70,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="t9E-du-5rN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="555" width="5" height="38"/>
+                <view tag="108" contentMode="scaleToFill" id="t9E-du-5rN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="555" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NXg-wq-ANh" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="538" width="166" height="22"/>
+                    <rect key="frame" x="805" y="538" width="166" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -85,13 +85,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="AFy-3C-65S" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="812" y="605" width="5" height="52"/>
+                <view tag="109" contentMode="scaleToFill" id="AFy-3C-65S" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="605" width="5" height="53"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBq-f0-PoL" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="588" width="148" height="22"/>
+                    <rect key="frame" x="805" y="588" width="148" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -100,8 +100,8 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="gTc-zF-tWl" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="780" y="669" width="5" height="77"/>
+                <view tag="110" contentMode="scaleToFill" id="gTc-zF-tWl" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="776" y="668" width="5" height="88"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                     <userDefinedRuntimeAttributes>
@@ -111,7 +111,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" id="x7p-Kc-eTO" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="743" y="725" width="152" height="22"/>
+                    <rect key="frame" x="735" y="733" width="152" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
@@ -121,8 +121,8 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="qO0-eK-DF8" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="696" y="737" width="5" height="110"/>
+                <view tag="111" contentMode="scaleToFill" id="qO0-eK-DF8" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="692" y="746" width="5" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                     <userDefinedRuntimeAttributes>
@@ -131,25 +131,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <button opaque="NO" tag="12" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="9b7-ER-63a" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="647" y="821" width="131" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="tintColor" systemColor="systemRedColor"/>
-                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="3"/>
-                    <state key="normal">
-                        <attributedString key="attributedTitle">
-                            <fragment content="Пушкинская">
-                                <attributes>
-                                    <color key="NSColor" systemColor="systemRedColor"/>
-                                    <font key="NSFont" metaFont="system" size="18"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
-                    </state>
-                </button>
-                <view contentMode="scaleToFill" id="A1m-Mk-izK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="112" contentMode="scaleToFill" id="A1m-Mk-izK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="613" y="824" width="5" height="102"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -177,7 +159,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="bjC-xQ-1Fv" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="113" contentMode="scaleToFill" id="bjC-xQ-1Fv" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="531" y="917" width="5" height="79.5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -198,7 +180,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="Bqw-Bm-Ybd" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="114" contentMode="scaleToFill" id="Bqw-Bm-Ybd" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="462" y="980" width="5" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -219,7 +201,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="GIX-lg-Xrh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="115" contentMode="scaleToFill" id="GIX-lg-Xrh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="390" y="1052" width="5" height="90"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -229,22 +211,22 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" id="dfn-fc-3Rw" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="116" contentMode="scaleToFill" id="dfn-fc-3Rw" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="355" y="1140" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="KHb-Xl-s1h" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="117" contentMode="scaleToFill" id="KHb-Xl-s1h" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="355" y="1190" width="5" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="t3X-8s-zwa" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="118" contentMode="scaleToFill" id="t3X-8s-zwa" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="355" y="1241" width="5" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="jMI-Xz-1em" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="119" contentMode="scaleToFill" id="jMI-Xz-1em" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="205" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -259,13 +241,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="J48-s7-RcN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="120" contentMode="scaleToFill" id="J48-s7-RcN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="255" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                 </view>
-                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VXd-5l-4uU" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="566" y="238" width="225" height="22"/>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="VXd-5l-4uU" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="566" y="230" width="147" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemBlueColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -274,7 +256,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="zlI-if-428" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="121" contentMode="scaleToFill" id="zlI-if-428" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="305" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -289,7 +271,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="5rj-vt-vE9" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="122" contentMode="scaleToFill" id="5rj-vt-vE9" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="355" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -304,7 +286,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="maT-cI-G4w" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="123" contentMode="scaleToFill" id="maT-cI-G4w" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="405" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -319,7 +301,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="Bp8-FM-t9y" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="124" contentMode="scaleToFill" id="Bp8-FM-t9y" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="455" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -334,7 +316,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="CC1-rQ-gXZ" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="125" contentMode="scaleToFill" id="CC1-rQ-gXZ" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="505" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -349,7 +331,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="rGm-rY-s3D" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="126" contentMode="scaleToFill" id="rGm-rY-s3D" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="555" width="5" height="103"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -375,24 +357,24 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="nzR-fb-FLE" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="572" y="683" width="5" height="46"/>
+                <view tag="127" contentMode="scaleToFill" id="nzR-fb-FLE" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="572" y="683" width="5" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                 </view>
                 <button opaque="NO" tag="29" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" id="VaR-pG-Xb0" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="566" y="722" width="171" height="21"/>
+                    <rect key="frame" x="566" y="731" width="162" height="26"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemBlueColor"/>
-                    <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="10"/>
                     <state key="normal" title="Сенная площадь  ">
                         <color key="titleColor" systemColor="systemBlueColor"/>
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="od8-fR-dCK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="572" y="768" width="5" height="140"/>
+                <view tag="128" contentMode="scaleToFill" id="od8-fR-dCK" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="572" y="768" width="5" height="141"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                 </view>
@@ -407,12 +389,12 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="iss-5y-HES" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="129" contentMode="scaleToFill" id="iss-5y-HES" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="920" width="5" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="5jN-Gd-sfo" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="130" contentMode="scaleToFill" id="5jN-Gd-sfo" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="991" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -427,7 +409,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="509-EG-x9C" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="131" contentMode="scaleToFill" id="509-EG-x9C" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="1041" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -442,7 +424,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="Xr2-dm-94d" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="132" contentMode="scaleToFill" id="Xr2-dm-94d" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="1091" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -457,7 +439,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="z66-52-SfL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="133" contentMode="scaleToFill" id="z66-52-SfL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="1141" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -472,7 +454,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="eIh-yp-JVx" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="134" contentMode="scaleToFill" id="eIh-yp-JVx" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="1191" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -497,7 +479,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="cPn-JC-lC0" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="135" contentMode="scaleToFill" id="cPn-JC-lC0" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="572" y="1241" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -517,7 +499,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <view contentMode="scaleToFill" id="o3G-29-o1O" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="136" contentMode="scaleToFill" id="o3G-29-o1O" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="245" y="455" width="5" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -552,7 +534,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="gC1-o6-pzb" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="137" contentMode="scaleToFill" id="gC1-o6-pzb" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="245" y="524" width="5" height="69"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -586,13 +568,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-HO-428" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="139" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-HO-428" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="375" y="674" width="193" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                 </view>
                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" id="9P2-0X-7uS" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="649" width="192" height="22"/>
+                    <rect key="frame" x="805" y="649.5" width="192" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -601,13 +583,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-7N-OpI" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="580" y="674" width="228" height="5"/>
+                <view tag="140" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-7N-OpI" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="580" y="674" width="227" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-04-CgN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="820" y="674" width="229" height="5"/>
+                <view tag="141" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-04-CgN" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="819" y="674" width="230" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <userDefinedRuntimeAttributes>
@@ -622,13 +604,13 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" id="xNb-tc-TBE" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="1044" y="676" width="5" height="54.5"/>
+                <view tag="141" contentMode="scaleToFill" id="xNb-tc-TBE" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1044" y="676" width="5" height="61.5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                 </view>
                 <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" lineBreakMode="wordWrap" id="uZX-wF-Sk7" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="1038" y="702" width="212" height="42"/>
+                    <rect key="frame" x="1038" y="709" width="212" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemGreenColor"/>
@@ -638,13 +620,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="0lX-qW-6ZD" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="1044" y="755" width="5" height="150"/>
+                <view tag="142" contentMode="scaleToFill" id="0lX-qW-6ZD" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1044" y="762" width="5" height="143"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <color key="tintColor" systemColor="systemGreenColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="Ln6-Fk-r9b" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="143" contentMode="scaleToFill" id="Ln6-Fk-r9b" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1044" y="917" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -665,7 +647,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <view contentMode="scaleToFill" id="exn-7o-0dP" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="144" contentMode="scaleToFill" id="exn-7o-0dP" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1044" y="967" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -681,7 +663,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="79u-0i-XHL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="145" contentMode="scaleToFill" id="79u-0i-XHL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1044" y="1017" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -697,7 +679,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="iEd-qC-DQp" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="146" contentMode="scaleToFill" id="iEd-qC-DQp" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1044" y="1066" width="5" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -724,7 +706,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="wordWrap" id="vNo-q8-CUT" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="1038" y="741" width="212" height="54"/>
+                    <rect key="frame" x="1038" y="748" width="212" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemOrangeColor"/>
@@ -734,13 +716,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="Ar5-2P-H61" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="138" contentMode="scaleToFill" id="Ar5-2P-H61" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="245" y="605" width="5" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yej-ks-vAL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="1052" y="747" width="228" height="5"/>
+                <view tag="150" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yej-ks-vAL" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1052" y="754" width="228" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <userDefinedRuntimeAttributes>
@@ -755,8 +737,8 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" id="NKv-Hg-Tkf" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="1275" y="750" width="5" height="53"/>
+                <view tag="150" contentMode="scaleToFill" id="NKv-Hg-Tkf" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1275" y="756" width="5" height="47"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                 </view>
@@ -771,13 +753,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="dRu-8n-8Nh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="151" contentMode="scaleToFill" id="dRu-8n-8Nh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1275" y="815" width="5" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <color key="tintColor" systemColor="systemGreenColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="JCh-15-8qs" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="152" contentMode="scaleToFill" id="JCh-15-8qs" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1275" y="866" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -793,7 +775,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="3QH-Jf-Pt9" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="153" contentMode="scaleToFill" id="3QH-Jf-Pt9" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="1275" y="916" width="5" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -820,7 +802,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="52" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="wordWrap" hasAttributedTitle="YES" id="g5G-hF-t1K" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="898" y="741" width="126" height="45"/>
+                    <rect key="frame" x="898" y="748" width="126" height="54"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemOrangeColor"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
@@ -843,13 +825,13 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ikZ-5U-Nvh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="912" y="747" width="129" height="5"/>
+                <view tag="149" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ikZ-5U-Nvh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="912" y="754" width="129" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-T3-pbU" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="748" y="747" width="152" height="5"/>
+                <view tag="148" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyx-T3-pbU" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="740" y="754" width="160" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <userDefinedRuntimeAttributes>
@@ -859,7 +841,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="e8w-S2-Ynr" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="566" y="741" width="106" height="32"/>
+                    <rect key="frame" x="577" y="748" width="106" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemOrangeColor"/>
@@ -869,8 +851,8 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-Zq-fHF" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="580" y="747" width="156" height="5"/>
+                <view tag="147" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WH3-Zq-fHF" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="591" y="754" width="137" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemOrangeColor"/>
                 </view>
@@ -886,7 +868,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="EPX-h3-v4D" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="734" y="741" width="129" height="32"/>
+                    <rect key="frame" x="726" y="748" width="129" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemOrangeColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -915,7 +897,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="65" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" id="LuH-l0-8aw" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="655" y="837" width="194" height="22"/>
+                    <rect key="frame" x="655" y="836" width="194" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemPurpleColor"/>
@@ -925,8 +907,8 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="j0H-Sh-IBD" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="612" y="749" width="5" height="98"/>
+                <view tag="160" contentMode="scaleToFill" id="j0H-Sh-IBD" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="612" y="749" width="5" height="99"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     <userDefinedRuntimeAttributes>
@@ -935,7 +917,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" id="HV9-Iv-fU2" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="159" contentMode="scaleToFill" id="HV9-Iv-fU2" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="540" y="697" width="5" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -945,8 +927,8 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" id="Fdc-l6-1tz" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="739" y="816" width="5" height="197"/>
+                <view tag="161" contentMode="scaleToFill" id="Fdc-l6-1tz" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="739" y="815" width="5" height="198"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     <userDefinedRuntimeAttributes>
@@ -955,7 +937,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" id="c17-DK-V4r" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="162" contentMode="scaleToFill" id="c17-DK-V4r" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="816" y="991" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -970,7 +952,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="t6R-YS-Mi2" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="163" contentMode="scaleToFill" id="t6R-YS-Mi2" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="816" y="1041" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -985,7 +967,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="PpJ-8o-STl" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="164" contentMode="scaleToFill" id="PpJ-8o-STl" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="816" y="1091" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1000,7 +982,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="YEA-X6-dbh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="165" contentMode="scaleToFill" id="YEA-X6-dbh" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="816" y="1140" width="5" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1015,7 +997,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="mqV-Yq-kx5" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="166" contentMode="scaleToFill" id="mqV-Yq-kx5" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="816" y="1191" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1040,7 +1022,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="8HN-pJ-nzA" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="167" contentMode="scaleToFill" id="8HN-pJ-nzA" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="816" y="1241" width="5" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1055,7 +1037,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="Ygq-rA-4wk" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="158" contentMode="scaleToFill" id="Ygq-rA-4wk" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="470" y="623" width="5" height="94"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1075,13 +1057,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="mJp-bC-4i4" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="154" contentMode="scaleToFill" id="mJp-bC-4i4" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="432" y="413" width="5" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                 </view>
                 <button opaque="NO" tag="58" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FsW-lQ-rkn" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="289" y="388" width="154" height="40"/>
+                    <rect key="frame" x="288" y="388" width="154" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                     <color key="tintColor" systemColor="systemPurpleColor"/>
@@ -1091,13 +1073,13 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="Tzi-z8-Nmp" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="155" contentMode="scaleToFill" id="Tzi-z8-Nmp" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="432" y="461" width="5" height="38.5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                 </view>
                 <button opaque="NO" tag="59" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-47-ro2" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="273" y="444" width="170" height="22"/>
+                    <rect key="frame" x="273" y="443" width="170" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemPurpleColor"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
@@ -1106,7 +1088,7 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="UZe-jf-p8d" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="156" contentMode="scaleToFill" id="UZe-jf-p8d" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="432" y="512" width="5" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -1122,12 +1104,12 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="af2-LO-UJV" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="157" contentMode="scaleToFill" id="af2-LO-UJV" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="432" y="561" width="5" height="66.5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-Sv-Ngg" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                <view tag="138" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbV-Sv-Ngg" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
                     <rect key="frame" x="245" y="674" width="118" height="5"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -1148,7 +1130,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O0I-Le-kW9" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="188" width="112" height="22"/>
+                    <rect key="frame" x="805" y="188" width="112" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1158,7 +1140,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MAV-Wp-EjW" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="388" width="188" height="22"/>
+                    <rect key="frame" x="805" y="388" width="188" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1168,7 +1150,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i7c-DG-k8N" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="338" width="170" height="22"/>
+                    <rect key="frame" x="805" y="338" width="170" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1178,7 +1160,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uUD-FD-MOb" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="288" width="153" height="22"/>
+                    <rect key="frame" x="805" y="288" width="153" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1188,7 +1170,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B73-yf-2Pg" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="238" width="218" height="22"/>
+                    <rect key="frame" x="805" y="238" width="218" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemRedColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1239,7 +1221,7 @@
                     </state>
                 </button>
                 <button opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="jBG-4Z-RlJ" customClass="StationButton" customModule="Metro" customModuleProvider="target">
-                    <rect key="frame" x="806" y="669" width="147" height="32"/>
+                    <rect key="frame" x="805" y="669" width="147" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="tintColor" systemColor="systemGreenColor"/>
                     <inset key="titleEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1256,10 +1238,112 @@
                         <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
                     </state>
                 </button>
+                <view hidden="YES" tag="110" contentMode="scaleToFill" id="zMS-zk-DYV" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="811" y="669" width="5" height="9"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="leading" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="9b7-ER-63a" customClass="StationButton" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="647" y="821" width="131" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="3"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Пушкинская">
+                                <attributes>
+                                    <color key="NSColor" systemColor="systemRedColor"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                    </state>
+                </button>
+                <view hidden="YES" tag="128" contentMode="scaleToFill" id="XxG-wn-Q2f" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="572" y="755" width="5" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <view hidden="YES" tag="127" contentMode="scaleToFill" id="an7-ge-5ID" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="572" y="670" width="5" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <view hidden="YES" tag="112" contentMode="scaleToFill" id="xCa-Ol-RTQ" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="574" y="905.5" width="5" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" tag="160" contentMode="scaleToFill" id="CAX-Du-D7w" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="651" y="825.5" width="5" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="132"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" tag="111" contentMode="scaleToFill" id="aSc-ee-a3u" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="731" y="748.5" width="5" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" tag="142" contentMode="scaleToFill" id="CIi-bb-ehA" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="1044" y="749" width="5" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <view hidden="YES" tag="110" contentMode="scaleToFill" id="Fer-yL-dBA" customClass="EdgeView" customModule="Metro" customModuleProvider="target">
+                    <rect key="frame" x="809" y="675" width="5" height="8"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomLeftCornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="bottomRightCornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="hiddenEdge110" destination="zMS-zk-DYV" id="hZ1-ls-Sge"/>
+                <outlet property="hiddenEdge110_1" destination="Fer-yL-dBA" id="n9f-BM-r0e"/>
+                <outlet property="hiddenEdge111" destination="aSc-ee-a3u" id="zKz-N5-Zms"/>
+                <outlet property="hiddenEdge112" destination="xCa-Ol-RTQ" id="AjY-16-t8v"/>
+                <outlet property="hiddenEdge127" destination="an7-ge-5ID" id="3AC-dI-ibd"/>
+                <outlet property="hiddenEdge128" destination="XxG-wn-Q2f" id="msu-1k-f73"/>
+                <outlet property="hiddenEdge142" destination="CIi-bb-ehA" id="sn9-HL-Zvi"/>
+                <outlet property="hiddenEdge160" destination="CAX-Du-D7w" id="LPt-7s-Ikm"/>
+            </connections>
             <point key="canvasLocation" x="185.50724637681162" y="198.54910714285714"/>
         </view>
     </objects>

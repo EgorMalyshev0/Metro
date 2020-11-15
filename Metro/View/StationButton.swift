@@ -7,10 +7,29 @@
 
 import UIKit
 
+//@IBDesignable
 class StationButton: UIButton {
-
-    func printMyTag(){
-        print(self.tag)
+    
+    var isSetuped = false
+    
+    @IBInspectable var background: UIColor = .clear {
+        didSet {
+            setButtonBackground(color: background)
+        }
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        setButtonBackground(color: background)
+        
+        if isSetuped { return }
+        isSetuped = true
+    }
+    
+    func setButtonBackground(color: UIColor){
+        self.imageView?.backgroundColor = color
+    }
+
     
 }
