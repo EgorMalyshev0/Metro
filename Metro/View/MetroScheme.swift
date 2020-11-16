@@ -37,25 +37,26 @@ class MetroScheme: UIView {
             hiddenEdge110.isHidden = true
             hiddenEdge110_1.isHidden = true
         }
-        if edges.contains(where: {$0.tag == 42}) && edges.contains(where: {$0.destination.tag == 53}) {
+        if edges.contains(where: {$0.tag == 142}) && edges.contains(where: {$0.destination.tag == 53}) {
             hiddenEdge142.isHidden = true
         }
         if edges.contains(where: {$0.tag == 111}) && edges.contains(where: {$0.destination.tag == 51}) {
             hiddenEdge111.isHidden = true
         }
-        if edges.contains(where: {$0.tag == 60}) && edges.contains(where: {$0.destination.tag == 12}) {
+        if edges.contains(where: {$0.tag == 160}) && edges.contains(where: {$0.destination.tag == 12}) {
             hiddenEdge160.isHidden = true
         }
         if edges.contains(where: {$0.tag == 112}) && edges.contains(where: {$0.destination.tag == 30}) {
             hiddenEdge112.isHidden = true
         }
-        if edges.contains(where: {$0.tag == 28}) && edges.contains(where: {$0.destination.tag == 64}) {
+        if edges.contains(where: {$0.tag == 128}) && edges.contains(where: {$0.destination.tag == 64}) {
             hiddenEdge128.isHidden = true
         }
-        if edges.contains(where: {$0.tag == 27}) && edges.contains(where: {$0.destination.tag == 42}) {
+        if edges.contains(where: {$0.tag == 127}) && edges.contains(where: {$0.destination.tag == 42}) {
             hiddenEdge127.isHidden = true
         }
     }
+    
     func rebootHiddenEdges(){
         hiddenEdge127.isHidden = true
         hiddenEdge128.isHidden = true

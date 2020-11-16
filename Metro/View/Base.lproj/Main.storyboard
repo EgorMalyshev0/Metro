@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6CU-tc-so7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6CU-tc-so7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,10 +13,64 @@
                 <viewController id="6CU-tc-so7" customClass="MainViewController" customModule="Metro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VaM-hE-74o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE7-9G-WT8">
+                                <rect key="frame" x="0.0" y="896" width="414" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31Y-vm-2pe">
+                                        <rect key="frame" x="374" y="10" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="resetPath:" destination="6CU-tc-so7" eventType="touchUpInside" id="fy0-ry-p2v"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBt-ML-rJl">
+                                        <rect key="frame" x="50" y="83" width="314" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2zZ-Wj-EnL"/>
+                                        </constraints>
+                                        <state key="normal" title="Детали маршрута"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общая информация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZx-Aw-dI2">
+                                        <rect key="frame" x="25" y="51" width="136" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- мин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjC-Wh-YQL">
+                                        <rect key="frame" x="25" y="20" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jjC-Wh-YQL" firstAttribute="leading" secondItem="yE7-9G-WT8" secondAttribute="leading" constant="25" id="181-qd-t5c"/>
+                                    <constraint firstItem="WBt-ML-rJl" firstAttribute="centerX" secondItem="yE7-9G-WT8" secondAttribute="centerX" id="Cba-O0-Ryr"/>
+                                    <constraint firstItem="WBt-ML-rJl" firstAttribute="leading" secondItem="yE7-9G-WT8" secondAttribute="leading" constant="50" id="Ce3-T7-vAi"/>
+                                    <constraint firstItem="zZx-Aw-dI2" firstAttribute="top" secondItem="jjC-Wh-YQL" secondAttribute="bottom" constant="10" id="E2L-0w-0pd"/>
+                                    <constraint firstAttribute="bottom" secondItem="WBt-ML-rJl" secondAttribute="bottom" constant="42" id="Ndz-8L-rYe"/>
+                                    <constraint firstAttribute="height" constant="150" id="YPx-6a-zHl"/>
+                                    <constraint firstAttribute="trailing" secondItem="31Y-vm-2pe" secondAttribute="trailing" constant="10" id="dFn-nY-ZZI"/>
+                                    <constraint firstItem="zZx-Aw-dI2" firstAttribute="leading" secondItem="yE7-9G-WT8" secondAttribute="leading" constant="25" id="fLS-hm-8rQ"/>
+                                    <constraint firstItem="jjC-Wh-YQL" firstAttribute="top" secondItem="yE7-9G-WT8" secondAttribute="top" constant="20" id="sNe-vA-TPL"/>
+                                    <constraint firstItem="31Y-vm-2pe" firstAttribute="top" secondItem="yE7-9G-WT8" secondAttribute="top" constant="10" id="wvZ-Va-ruJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Sux-YK-sDb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sux-YK-sDb" firstAttribute="trailing" secondItem="yE7-9G-WT8" secondAttribute="trailing" id="Sug-PE-jKV"/>
+                            <constraint firstAttribute="bottom" secondItem="yE7-9G-WT8" secondAttribute="bottom" constant="-150" id="VvZ-EL-SKR"/>
+                            <constraint firstItem="yE7-9G-WT8" firstAttribute="leading" secondItem="Sux-YK-sDb" secondAttribute="leading" id="Za3-Y6-bmp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailsView" destination="yE7-9G-WT8" id="Or6-y9-Sgu"/>
+                        <outlet property="pathDetailsLabel" destination="zZx-Aw-dI2" id="7Ko-0p-4ei"/>
+                        <outlet property="timeLabel" destination="jjC-Wh-YQL" id="a5m-kj-pxd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHQ-dB-OM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

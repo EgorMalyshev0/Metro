@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
 
     let graph = GraphCreator().create()
     var scroll = UIScrollView()
-    var scheme = UIView()
+    lazy var scheme = MetroScheme()
     var imgViews = [UIImageView]()
         
     var temporaryTag: Int = 0
@@ -52,16 +52,15 @@ class MainViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var pathDetailsLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let scroll = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-        self.scroll = scroll
-        view.addSubview(scroll)
-        let scheme = UIView.fromNIB() as MetroScheme
-        self.scheme = scheme
-        scroll.addSubview(scheme)
         
+        configurateDetailsView()
         configurateScheme()
         countMinScale()
         centerScheme()
@@ -72,7 +71,24 @@ class MainViewController: UIViewController {
         centerScheme()
     }
     
+    @IBAction func resetPath(_ sender: Any) {
+        fromStation = 0
+        toStation = 0
+        picturesReboot()
+        cleanPath()
+        UIView.animate(withDuration: 0.2) {
+            self.detailsView.transform = CGAffineTransform.identity
+        }
+    }
+    
     func configurateScheme() {
+        let scroll = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        self.scroll = scroll
+        view.addSubview(scroll)
+        view.insertSubview(scroll, belowSubview: detailsView)
+        let scheme = UIView.fromNIB() as MetroScheme
+        self.scheme = scheme
+        scroll.addSubview(scheme)
         scroll.contentSize = scheme.bounds.size
         scroll.delegate = self
         scroll.showsVerticalScrollIndicator = false
@@ -179,6 +195,9 @@ class MainViewController: UIViewController {
         if let from = graph.stationWithTag(fromStation), let to = graph.stationWithTag(toStation), let path = graph.shortestPath(source: from, destination: to){
             cleanPath()
             print(path.description)
+            let time = Int(path.cumulativeTime.rounded())
+            timeLabel.text = "\(time) мин"
+            pathDetailsLabel.text = path.detailsInfo()
             showPathOnScheme(path: path)
             temporaryTag = 0
             for s in graph.stations{
@@ -211,9 +230,8 @@ class MainViewController: UIViewController {
                 }
             }
         }
-        let scheme = self.scheme as! MetroScheme
         scheme.checkHiddenEdges(edges: edges)
-        
+        showDetailsWindow()
     }
     
     func cleanPath(){
@@ -225,8 +243,24 @@ class MainViewController: UIViewController {
         for ee in edgesOnScheme {
             ee.alpha = 1
         }
-        let scheme = self.scheme as! MetroScheme
         scheme.rebootHiddenEdges()
+    }
+    
+    func configurateDetailsView(){
+        detailsView.layer.cornerRadius = 10
+        detailsView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        detailsView.layer.shadowOffset = .zero
+        detailsView.layer.shadowColor = UIColor.gray.cgColor
+        detailsView.layer.shadowRadius = 4
+        detailsView.layer.shadowOpacity = 0.5
+    }
+    
+    func showDetailsWindow(){
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
+            let x = self.detailsView.frame.origin.x
+            self.detailsView.transform = CGAffineTransform(translationX: x, y: -self.detailsView.frame.size.height)
+        }, completion: nil)
+        print(detailsView.frame)
     }
 }
 

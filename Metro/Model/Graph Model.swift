@@ -72,6 +72,7 @@ class Graph {
       var frontier: [Path] = [] {
         didSet { frontier.sort { return $0.cumulativeTime < $1.cumulativeTime } }
       }
+        var transitions: [Edge] = []
       
       frontier.append(Path(station: source))
       
@@ -87,6 +88,9 @@ class Graph {
         
         for edge in fastestPath.station.edges where !edge.destination.visited {
           frontier.append(Path(station: edge.destination, edge: edge, previousPath: fastestPath))
+            if edge.isTransition{
+                transitions.append(edge)
+            }
         }
       }
       return nil
@@ -95,9 +99,9 @@ class Graph {
 }
 
 class Path: CustomStringConvertible {
-  public let cumulativeTime: Double
-  public let station: Station
-  public let previousPath: Path?
+    public let cumulativeTime: Double
+    public let station: Station
+    public let previousPath: Path?
     var array: [Station] {
       var array: [Station] = [self.station]
       var iterativePath = self
@@ -109,7 +113,6 @@ class Path: CustomStringConvertible {
     }
     var description: String {
         var description = ""
-//        var tempor: Station?
         for i in 0...array.count - 1 {
             if i == array.count - 1{
                 description += "\(array[i].name)"
@@ -121,19 +124,6 @@ class Path: CustomStringConvertible {
                 }
             }
         }
-//        for (index, element) in array.enumerated() {
-//            if index == array.count - 1{
-//                description += "\(element.name)"
-//            } else if index == 0{
-//                tempor = element
-//            } else {
-//                if element.edgeWith(destination: tempor!)!.isTransition{
-//
-//                } else {
-//                    description += "\(tempor!.name) -> "
-//                }
-//            }
-//        }
         if cumulativeTime < 60 {
             let time = "\nВремя в пути: \(cumulativeTime) мин"
             description += time
@@ -155,4 +145,31 @@ class Path: CustomStringConvertible {
     self.station = station
     self.previousPath = previousPath
   }
+    
+    func transitionsCount() -> String {
+        var count = 0
+        for i in 0...array.count - 2{
+            if array[i].edgeWith(destination: array[i+1])!.isTransition{
+                count += 1
+            }
+        }
+        switch count {
+        case 0:
+            return "без пересадок"
+        case 1:
+            return "1 пересадка"
+        default:
+            return "\(count) пересадки"
+        }
+    }
+    
+    func detailsInfo() -> String {
+        var info = ""
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        let futureDate = Calendar.current.date(byAdding: .minute, value: Int(cumulativeTime.rounded()), to: date)
+        info += formatter.string(from: date) + " - " + formatter.string(from: futureDate!) + ", " +  transitionsCount()
+        return info
+    }
 }
