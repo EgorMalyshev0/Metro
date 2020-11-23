@@ -5,7 +5,7 @@
 //  Created by Egor Malyshev on 28.10.2020.
 //
 
-import Foundation
+import UIKit
 
 class Station {
     var name: String
@@ -13,6 +13,38 @@ class Station {
     var tag: Int
     var edges: [Edge] = []
     var lineNumber: Int
+    var lineName: String {
+        switch lineNumber {
+        case 1:
+            return "Кировско-Выборгская"
+        case 2:
+            return "Московско-Петроградская"
+        case 3:
+            return "Невско-Василеостровская"
+        case 4:
+            return "Правобережная"
+        case 5:
+            return "Фрунзенско-Приморская"
+        default:
+            return ""
+        }
+    }
+    var lineColor: UIColor {
+        switch lineNumber {
+        case 1:
+            return .systemRed
+        case 2:
+            return .systemBlue
+        case 3:
+            return .systemGreen
+        case 4:
+            return .systemOrange
+        case 5:
+            return .systemPurple
+        default:
+            return .gray
+        }
+    }
     
     init(name: String, tag: Int, line: Int) {
         self.name = name
@@ -171,5 +203,26 @@ class Path: CustomStringConvertible {
         let futureDate = Calendar.current.date(byAdding: .minute, value: Int(cumulativeTime.rounded()), to: date)
         info += formatter.string(from: date) + " - " + formatter.string(from: futureDate!) + ", " +  transitionsCount()
         return info
+    }
+    
+    func countCurrentTimeOnStation(index i: Int) -> String {
+        var date = Date()
+        if i == 0 {
+        } else if i > 0 && i <= array.count - 1 {
+            var cumulativeTime: Double = 0
+            for index in 1...i{
+                if let edge = array[index - 1].edgeWith(destination: array[index]){
+                    cumulativeTime += edge.time
+                }
+            }
+            let cumulativeDate = Calendar.current.date(byAdding: .minute, value: Int(cumulativeTime.rounded()), to: date)
+            date = cumulativeDate!
+        } else {
+            return ""
+        }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        let text = formatter.string(from: date)
+        return text
     }
 }

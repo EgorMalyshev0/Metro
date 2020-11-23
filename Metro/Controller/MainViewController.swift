@@ -12,7 +12,9 @@ class MainViewController: UIViewController {
     let graph = GraphCreator().create()
     var scroll = UIScrollView()
     lazy var scheme = MetroScheme()
+    lazy var choosingView = StationChoosingView()
     var imgViews = [UIImageView]()
+    var path: Path?
         
     var temporaryTag: Int = 0
     var fromStation: Int = 0 {
@@ -64,11 +66,18 @@ class MainViewController: UIViewController {
         configurateScheme()
         countMinScale()
         centerScheme()
+        stationChoosingViewAdding()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         centerScheme()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PathDetailsViewController, segue.identifier == "showDetails" {
+            vc.path = path
+        }
     }
     
     @IBAction func resetPath(_ sender: Any) {
@@ -96,11 +105,14 @@ class MainViewController: UIViewController {
         
         let stations = scheme.subviews.filter{$0 is StationButton}
         for s in stations{
-            if let s = s as? StationButton{
-                s.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
+            if let s = s as? StationButton {
+//                s.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
+                s.addTarget(self, action: #selector(showStationChoosingView), for: .touchUpInside)
                 s.addAction(UIAction(handler: { (action) in
                     if let stationButton = action.sender as? StationButton{
                         self.temporaryTag = stationButton.tag
+                        let station = self.graph.stationWithTag(stationButton.tag)
+                        self.choosingView.station = station
                     }
                 }), for: .touchUpInside)
             }
@@ -114,7 +126,7 @@ class MainViewController: UIViewController {
         let yscale = bounds.height / schemeBounds.height
         let minScale = min(xscale, yscale)
         scroll.minimumZoomScale = minScale
-        scroll.maximumZoomScale = 2
+        scroll.maximumZoomScale = 1.3
         scroll.zoomScale = minScale
     }
     
@@ -134,28 +146,63 @@ class MainViewController: UIViewController {
         scheme.frame = schemeFrame
     }
     
-    @objc func showAlert(){
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let from = UIAlertAction(title: "Отсюда", style: .default) { (action) in
+    func stationChoosingViewAdding(){
+        let view = UIView.fromNIB() as StationChoosingView
+        let size = CGSize(width: self.view.bounds.width, height: self.view.bounds.height / 5)
+        view.frame = CGRect(x: 0, y: self.view.bounds.height, width: size.width, height: size.height)
+        view.layer.cornerRadius = 10
+        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        view.layer.shadowOffset = .zero
+        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowRadius = 4
+        view.layer.shadowOpacity = 0.5
+        self.view.addSubview(view)
+        choosingView = view
+        choosingView.fromStationButton.addAction(UIAction(handler: { (action) in
             if self.temporaryTag != 0{
-                print("Отсюда")
                 self.fromStation = self.temporaryTag
                 self.temporaryTag = 0
             }
-        }
-        let to = UIAlertAction(title: "Сюда", style: .default) { (action) in
+            self.choosingView.close(UIButton.self)
+        }), for: .touchUpInside)
+        choosingView.toStationButton.addAction(UIAction(handler: { (action) in
             if self.temporaryTag != 0{
-                print("Сюда")
                 self.toStation = self.temporaryTag
                 self.temporaryTag = 0
             }
-        }
-        let cancel = UIAlertAction(title: "Отмена", style: .destructive, handler: nil)
-        alert.addAction(from)
-        alert.addAction(to)
-        alert.addAction(cancel)
-        present(alert, animated: true, completion: nil)
+            self.choosingView.close(UIButton.self)
+        }), for: .touchUpInside)
     }
+    
+    @objc
+    func showStationChoosingView(){
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
+            let x = self.choosingView.frame.origin.x
+            self.choosingView.transform = CGAffineTransform(translationX: x, y: -self.choosingView.frame.size.height)
+        }, completion: nil)
+    }
+    
+//    @objc
+//    func showAlert(){
+//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+//        let from = UIAlertAction(title: "Отсюда", style: .default) { (action) in
+//            if self.temporaryTag != 0{
+//                self.fromStation = self.temporaryTag
+//                self.temporaryTag = 0
+//            }
+//        }
+//        let to = UIAlertAction(title: "Сюда", style: .default) { (action) in
+//            if self.temporaryTag != 0{
+//                self.toStation = self.temporaryTag
+//                self.temporaryTag = 0
+//            }
+//        }
+//        let cancel = UIAlertAction(title: "Отмена", style: .destructive, handler: nil)
+//        alert.addAction(from)
+//        alert.addAction(to)
+//        alert.addAction(cancel)
+//        present(alert, animated: true, completion: nil)
+//    }
     
     func showPicture(_ pictureName: PictureName){
         var check = 0
@@ -168,20 +215,36 @@ class MainViewController: UIViewController {
             guard let button = scheme.subviews.filter({$0.tag == check}).first as? StationButton else {return}
             let fr = button.frame
             let center = button.imageView!.center
-            let size = CGSize(width: 75, height: 90)
+            let size = CGSize(width: 35, height: 42)
             if button.semanticContentAttribute == .forceRightToLeft {
                 let origin = CGPoint(x: fr.origin.x + center.x - size.width / 2, y: fr.origin.y - size.height + center.y)
                 let img = UIImageView(frame: CGRect(origin: origin, size: size))
                 img.image = UIImage(named: pictureName.rawValue)
+                img.tag = check
                 scheme.addSubview(img)
                 imgViews.append(img)
             } else {
                 let origin = CGPoint(x: fr.origin.x + center.x - size.width / 2, y: fr.origin.y - size.height + center.y)
                 let img = UIImageView(frame: CGRect(origin: origin, size: size))
                 img.image = UIImage(named: pictureName.rawValue)
+                img.tag = check
                 scheme.addSubview(img)
                 imgViews.append(img)
             }
+        imgViews.forEach{img in
+            img.transform = CGAffineTransform(scaleX: 1.0 / scroll.zoomScale, y: 1.0 / scroll.zoomScale)
+            setPosition(img)
+        }
+    }
+    
+    func setPosition(_ img: UIImageView){
+        if img.tag == fromStation || img.tag == toStation {
+            guard let button = scheme.subviews.filter({$0.tag == img.tag}).first as? StationButton else {return}
+            let fr = button.frame
+            let center = button.imageView!.center
+            let origin = CGPoint(x: fr.origin.x + center.x - img.frame.width / 2, y: fr.origin.y - img.frame.height + center.y)
+            img.frame.origin = origin
+        }
     }
     
     func picturesReboot(){
@@ -203,6 +266,7 @@ class MainViewController: UIViewController {
             for s in graph.stations{
                 s.visited = false
             }
+            self.path = path
         }
     }
     
@@ -260,7 +324,6 @@ class MainViewController: UIViewController {
             let x = self.detailsView.frame.origin.x
             self.detailsView.transform = CGAffineTransform(translationX: x, y: -self.detailsView.frame.size.height)
         }, completion: nil)
-        print(detailsView.frame)
     }
 }
 
@@ -274,6 +337,16 @@ extension MainViewController: UIScrollViewDelegate{
         return self.scheme
     }
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        imgViews.forEach{img in
+            img.transform = CGAffineTransform(scaleX: 1.0 / scroll.zoomScale, y: 1.0 / scroll.zoomScale)
+            setPosition(img)
+        }
         centerScheme()
+    }
+}
+
+extension MainViewController: UIPopoverPresentationControllerDelegate{
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
 }

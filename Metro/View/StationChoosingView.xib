@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StationChoosingView" customModule="Metro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Станция " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYQ-lp-Txd">
+                    <rect key="frame" x="15" y="20" width="74.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="98A-h6-ccZ">
+                    <rect key="frame" x="15" y="111" width="384" height="33"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-UR-xYh">
+                            <rect key="frame" x="0.0" y="0.0" width="185.5" height="33"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <state key="normal" title="Отсюда">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Rw-hk-sBW">
+                            <rect key="frame" x="198.5" y="0.0" width="185.5" height="33"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <state key="normal" title="Сюда">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-PL-yLU">
+                    <rect key="frame" x="374" y="10" width="30" height="30"/>
+                    <connections>
+                        <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="eND-Kr-64A"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKH-mu-WpS">
+                    <rect key="frame" x="15" y="46.5" width="17" height="17"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oU-Fu-Ia7">
+                            <rect key="frame" x="5.5" y="0.0" width="6.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hKH-mu-WpS" secondAttribute="height" multiplier="1:1" id="6Ou-MY-qfD"/>
+                        <constraint firstItem="6oU-Fu-Ia7" firstAttribute="centerX" secondItem="hKH-mu-WpS" secondAttribute="centerX" id="b7u-zf-afX"/>
+                        <constraint firstAttribute="width" constant="17" id="vaG-PZ-nYd"/>
+                        <constraint firstItem="6oU-Fu-Ia7" firstAttribute="centerY" secondItem="hKH-mu-WpS" secondAttribute="centerY" id="xsN-NE-55q"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Линия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-hx-mbp">
+                    <rect key="frame" x="40" y="46.5" width="42" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HYQ-lp-Txd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="3th-gl-6tv"/>
+                <constraint firstItem="v9t-hx-mbp" firstAttribute="centerY" secondItem="hKH-mu-WpS" secondAttribute="centerY" id="4O4-EW-qcZ"/>
+                <constraint firstItem="HYQ-lp-Txd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="55H-Qp-I1Y"/>
+                <constraint firstItem="rqp-PL-yLU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="HY2-E4-FFX"/>
+                <constraint firstAttribute="trailing" secondItem="rqp-PL-yLU" secondAttribute="trailing" constant="10" id="RJ2-SJ-vRz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="98A-h6-ccZ" secondAttribute="bottom" constant="20" id="Rvn-YQ-msx"/>
+                <constraint firstItem="hKH-mu-WpS" firstAttribute="top" secondItem="HYQ-lp-Txd" secondAttribute="bottom" constant="6" id="Sjv-i6-oMA"/>
+                <constraint firstItem="hKH-mu-WpS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="cwG-PZ-lRW"/>
+                <constraint firstItem="v9t-hx-mbp" firstAttribute="leading" secondItem="hKH-mu-WpS" secondAttribute="trailing" constant="8" id="mdl-EC-s61"/>
+                <constraint firstItem="98A-h6-ccZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rtP-sy-OUZ"/>
+                <constraint firstItem="98A-h6-ccZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="wU9-uz-3YE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fromStationButton" destination="qH8-UR-xYh" id="pbO-2d-V1C"/>
+                <outlet property="lineColorView" destination="hKH-mu-WpS" id="3cT-N3-g0W"/>
+                <outlet property="lineNameLabel" destination="v9t-hx-mbp" id="Jjb-Az-NF6"/>
+                <outlet property="lineNumberLabel" destination="6oU-Fu-Ia7" id="mgH-zP-FLe"/>
+                <outlet property="stationNameLabel" destination="HYQ-lp-Txd" id="eva-lP-SVg"/>
+                <outlet property="toStationButton" destination="0Rw-hk-sBW" id="vlX-9l-y2S"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="344.86607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
