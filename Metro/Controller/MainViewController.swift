@@ -54,6 +54,12 @@ class MainViewController: UIViewController {
         }
     }
     
+    lazy var zoomTap: UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleZoomingTap))
+        tap.numberOfTapsRequired = 2
+        return tap
+    }()
+    
     @IBOutlet weak var detailsView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var pathDetailsLabel: UILabel!
@@ -106,7 +112,6 @@ class MainViewController: UIViewController {
         let stations = scheme.subviews.filter{$0 is StationButton}
         for s in stations{
             if let s = s as? StationButton {
-//                s.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
                 s.addTarget(self, action: #selector(showStationChoosingView), for: .touchUpInside)
                 s.addAction(UIAction(handler: { (action) in
                     if let stationButton = action.sender as? StationButton{
@@ -117,6 +122,9 @@ class MainViewController: UIViewController {
                 }), for: .touchUpInside)
             }
         }
+        
+        scheme.addGestureRecognizer(zoomTap)
+        scheme.isUserInteractionEnabled = true
     }
     
     func countMinScale(){
@@ -126,7 +134,7 @@ class MainViewController: UIViewController {
         let yscale = bounds.height / schemeBounds.height
         let minScale = min(xscale, yscale)
         scroll.minimumZoomScale = minScale
-        scroll.maximumZoomScale = 1.3
+        scroll.maximumZoomScale = 1
         scroll.zoomScale = minScale
     }
     
@@ -144,6 +152,25 @@ class MainViewController: UIViewController {
             schemeFrame.origin.y = 0
         }
         scheme.frame = schemeFrame
+    }
+    
+    @objc func handleZoomingTap(sender: UITapGestureRecognizer){
+        let location = sender.location(in: sender.view)
+    
+        let currentScale = scroll.zoomScale
+        let minScale = scroll.minimumZoomScale
+        let maxScale = scroll.maximumZoomScale
+        
+        if minScale == maxScale && minScale > 1 { return }
+        let toScale = maxScale
+        let finalScale = (currentScale < maxScale) ? toScale : minScale
+        
+        let width = scroll.bounds.width / finalScale
+        let height = scroll.bounds.height / finalScale
+        let x = location.x - width / 2
+        let y = location.y - height / 2
+        let zoomRect = CGRect(origin: CGPoint(x: x, y: y), size: CGSize(width: width, height: height))
+        scroll.zoom(to: zoomRect, animated: true)
     }
     
     func stationChoosingViewAdding(){
@@ -181,28 +208,6 @@ class MainViewController: UIViewController {
             self.choosingView.transform = CGAffineTransform(translationX: x, y: -self.choosingView.frame.size.height)
         }, completion: nil)
     }
-    
-//    @objc
-//    func showAlert(){
-//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//        let from = UIAlertAction(title: "Отсюда", style: .default) { (action) in
-//            if self.temporaryTag != 0{
-//                self.fromStation = self.temporaryTag
-//                self.temporaryTag = 0
-//            }
-//        }
-//        let to = UIAlertAction(title: "Сюда", style: .default) { (action) in
-//            if self.temporaryTag != 0{
-//                self.toStation = self.temporaryTag
-//                self.temporaryTag = 0
-//            }
-//        }
-//        let cancel = UIAlertAction(title: "Отмена", style: .destructive, handler: nil)
-//        alert.addAction(from)
-//        alert.addAction(to)
-//        alert.addAction(cancel)
-//        present(alert, animated: true, completion: nil)
-//    }
     
     func showPicture(_ pictureName: PictureName){
         var check = 0
